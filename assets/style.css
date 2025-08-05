@@ -1,0 +1,99 @@
+:root {
+  --background: linear-gradient(135deg, #15002e, #5e17eb);
+  --button-bg: #2d0059;
+  --button-hover: #4b008e;
+  --text-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--background);
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.theme-switcher button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+main {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+main.hidden {
+  display: none;
+}
+
+button {
+  display: block;
+  margin: 1rem auto;
+  padding: 15px 30px;
+  font-size: 1rem;
+  background: var(--button-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px #000;
+}
+
+button:hover {
+  background: var(--button-hover);
+  transform: scale(1.05);
+}
+
+button.back {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+
+/* Themes */
+body.purple {
+  --background: linear-gradient(135deg, #15002e, #5e17eb);
+  --button-bg: #2d0059;
+  --button-hover: #4b008e;
+}
+
+body.dark {
+  --background: #0e0e0e;
+  --button-bg: #1a1a1a;
+  --button-hover: #333333;
+}
+
+body.light {
+  --background: #ffffff;
+  --button-bg: #dddddd;
+  --button-hover: #bbbbbb;
+  --text-color: #000000;
+}
